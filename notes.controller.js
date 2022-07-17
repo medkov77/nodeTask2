@@ -24,6 +24,7 @@ async function editNote(id, title) {
     }
   });
   await saveNotes(notes);
+  console.log(chalk.blueBright(`Note with id="${id}" has been edited.`));
 }
 
 async function getNotes() {
